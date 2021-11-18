@@ -26,13 +26,14 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+
       - run: npm ci
       - run: npm run generate
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
-        #if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          force_orphan: true
           publish_branch: main
           publish_dir: ./dist
