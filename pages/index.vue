@@ -1,26 +1,26 @@
 <template>
-  <div class="w-screen h-screen bg-cover object-center py-5" style="background-image: url('/background.jpg');">
-    <div class="max-w-4xl mx-auto">
-      <div class="flex justify-end">
+  <div class="w-screen h-screen bg-cover object-center py-5 overflow-auto" style="background-image: url('/background.jpg');">
+    <div class="max-w-5xl mx-auto">
+      <!-- <div class="flex justify-end">
         <div class="w-4/12 -mr-1 flex justify-end">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-auto w-24" viewBox="0 0 136 70">
             <path fill="#fff" d="M64 48.3333C40.3125 70 0 70 0 70h135.5V0h-8.673C104.41 0 85.7045 15.5842 74.3306 34.9015 71.281 40.0808 67.8169 44.8421 64 48.3333z"/>
           </svg>
         </div>
         <div class="w-7/12 bg-white flex flex-col justify-center rounded-tr-3xl">
-          <ul class="flex justify-between pl-5 pr-10 pt-3">
-              <li class="text-gray-500 text-sm hover:text-blue-500"><a href="#">ABOUT</a></li>
+          <ul class="flex justify-center pl-5 pr-10 pt-3 space-x-10">
+              <li class="text-gray-500 text-sm hover:text-blue-500"><a href="#">TENTANG</a></li>
               <li class="text-gray-500 text-sm hover:text-blue-500"><a href="#">RESUME</a></li>
               <li class="text-gray-500 text-sm hover:text-blue-500"><a href="#">PORTFOLIO</a></li>
               <li class="text-gray-500 text-sm hover:text-blue-500"><a href="#">BLOG</a></li>
           </ul>
         </div>
-      </div>
-      <div class="bg-white rounded-tl-3xl rounded-b-3xl">
-        <div class="w-3/12 bg-gray-200 rounded-3xl py-8 px-5 flex flex-col items-center space-y-3">
+      </div> -->
+      <div class="bg-white rounded-3xl flex flex-row">
+        <div class="w-3/12 bg-gray-200 rounded-3xl py-8 px-5 flex flex-col items-center space-y-5">
           <img class="w-36 h-36 rounded-3xl" src="/profile.jpeg" alt="profile">
           <div class="text-gray-600 text-2xl font-serif">Rizal Bachtiar</div>
-          <div class="bg-gray-300 text-xs py-1 px-4 rounded-full text-gray-500">Junior Enginer</div>
+          <div class="bg-gray-300 py-2 px-6 rounded-full text-gray-500 font-extralight text-sm">Junior Engineer</div>
           <ul class="flex space-x-4 items-center">
               <li>
                 <a href="#">
@@ -63,44 +63,109 @@
               </li>
           </ul>
           <div class="w-full">
-            <ul class="flex flex-col items-start space-y-3 font-light">
+            <ul class="flex flex-col items-start space-y-4">
               <li class="flex flex-row space-x-1">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                <span class="text-xs text-gray-500">30 April 1997</span>
+                <span class="text-sm font-extralight text-gray-500">30 April 1997</span>
               </li>
               <li class="flex flex-row space-x-1">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span class="text-xs text-gray-500">Pamekasan, Indonesia</span>
+                <span class="text-sm font-extralight text-gray-500">Pamekasan, Indonesia</span>
               </li>
               <li class="flex flex-row space-x-1">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <span class="text-xs text-gray-500">rizal.bachtiar.31@gmail.com</span>
+                <span class="text-sm font-extralight text-gray-500">rizal.bachtiar.31@gmail.com</span>
               </li>
               <li class="flex flex-row space-x-1">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                 </svg>
-                <span class="text-xs text-gray-500">+62 82 337 307 996</span>
+                <span class="text-sm font-extralight text-gray-500">+62 82 337 307 996</span>
               </li>
               <li class="flex flex-row space-x-1">
                 <svg class="h-4 w-4 text-gray-500"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
-                <span class="text-xs text-gray-500">@rizalbachtiar.12</span>
+                <span class="text-sm font-extralight text-gray-500">@rizalbachtiar.12</span>
               </li>
             </ul>
           </div>
-          <button class="bg-blue-600 px-6 py-2 rounded-2xl text-gray-200 shadow-lg font-extralight flex items-center hover:bg-blue-500 transition">
+          <button class="bg-blue-600 px-6 py-3 rounded-2xl text-gray-200 shadow-lg font-extralight flex items-center hover:bg-blue-500 transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
             </svg>
             Download CV
           </button>
+        </div>
+        <div class="w-9/12 py-10 px-12 space-y-3">
+          <div class="text-3xl font-semibold">Tentang Saya</div>
+          <div class="font-light text-justify">
+            Saya  Rizal Bachtiar, Lulusan D3  Manajemen Informatika Universitas Trunojoyo Madura. Saya seorang Junior  Engineer. Memiliki  pengalaman  magang  sebagai PHP Developer di  CV.Evotek. Memulai karir di  PT.SISI Sebagai PHP Developer kemudian  menjadi Python  Developer hingga saat  ini.
+          </div>
+          <div class="py-3">
+            <div class="flex flex-row items-center space-x-4">
+              <img class="w-11" src="/experience.png" alt="experience">
+
+              <span class="text-xl font-semibold">Pendidikan</span>
+            </div>
+            <ul>
+              <li>
+                  <article>
+                      <div class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-4 overflow-hidden hover:bg-white">
+                          <h3 class="font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0">Universitas Islam Madura</h3>
+                          <time datetime="2021-06-17T19:00:00.000Z" class="md:col-start-1 md:col-span-2 row-start-1 md:row-end-3 flex items-center font-medium mb-1 md:mb-0">
+                              <svg viewBox="0 0 12 12" class="w-3 h-3 mr-6 overflow-visible text-blue-500">
+                                  <circle cx="6" cy="6" r="6" fill="currentColor"></circle>
+                                  <circle cx="6" cy="6" r="11" fill="none" stroke="currentColor" stroke-width="2"></circle>
+                                  <path d="M 6 18 V 500" fill="none" stroke-width="2" stroke="currentColor" class="text-gray-200"></path>
+                              </svg>
+                              2021 - 2022
+                          </time>
+                          <p class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 text-sm">
+                              S1 Teknik Informatika
+                          </p>
+                      </div>
+                  </article>
+              </li>
+              <li>
+                  <article>
+                      <div class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-4 overflow-hidden hover:bg-white">
+                          <h3 class="font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0">Universitas Trunojoyo Madura</h3>
+                          <time datetime="2021-04-05T19:00:00.000Z" class="md:col-start-1 md:col-span-2 row-start-1 md:row-end-3 flex items-center font-medium mb-1 md:mb-0">
+                              <svg viewBox="0 0 12 12" class="w-3 h-3 mr-6 overflow-visible text-gray-300">
+                                  <circle cx="6" cy="6" r="6" fill="currentColor"></circle>
+                                  <path d="M 6 -6 V -30" fill="none" stroke-width="2" stroke="currentColor" class="text-gray-200"></path>
+                                  <path d="M 6 18 V 500" fill="none" stroke-width="2" stroke="currentColor" class="text-gray-200"></path>
+                              </svg>
+                              2015 - 2018
+                          </time>
+                          <p class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 text-sm">D3 Manajemen Informatika</p>
+                      </div>
+                  </article>
+              </li>
+              
+              <li>
+                  <article>
+                      <div class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-4 overflow-hidden hover:bg-white">
+                          <h3 class="font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0">SMKN 2 Pamekasan</h3>
+                          <time datetime="2020-11-18T17:45:00.000Z" class="md:col-start-1 md:col-span-2 row-start-1 md:row-end-3 flex items-center font-medium mb-1 md:mb-0">
+                              <svg viewBox="0 0 12 12" class="w-3 h-3 mr-6 overflow-visible text-gray-300">
+                                  <circle cx="6" cy="6" r="6" fill="currentColor"></circle>
+                                  <path d="M 6 -6 V -30" fill="none" stroke-width="2" stroke="currentColor" class="text-gray-200"></path>
+                              </svg>
+                              2012 - 2015
+                          </time>
+                          <p class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 text-sm">Teknik Multimedia & Jaringan</p>
+                      </div>
+                  </article>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
